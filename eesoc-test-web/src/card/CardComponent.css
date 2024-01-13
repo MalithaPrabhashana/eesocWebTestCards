@@ -1,0 +1,21 @@
+/* CardComponent.css */
+
+.card-container {
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;  
+}
+
+.scaling-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover .scaling-image {
+    transform: scale(1.2); 
+}
